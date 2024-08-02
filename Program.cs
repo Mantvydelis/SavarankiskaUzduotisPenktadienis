@@ -30,7 +30,7 @@ public class Program
 
             switch (choice)
             {
-                case "1"://Add User
+                case "1":
 
                     Console.Write("Enter Name: ");
                     var name = Console.ReadLine();
@@ -42,7 +42,7 @@ public class Program
 
                     break;
 
-                case "2": //4.Add Post
+                case "2":
 
                     Console.Write("Enter User Id: ");
                     var userId = int.Parse(Console.ReadLine());
@@ -56,7 +56,7 @@ public class Program
 
                     break;
 
-                case "3": //3.Get User
+                case "3":
                     Console.Write("Enter User Id: ");
                     var getUserId = int.Parse(Console.ReadLine());
                     var getUser = _userService.GetUser(getUserId);
@@ -71,7 +71,7 @@ public class Program
 
                     break;
 
-                case "4": //6.Get Post
+                case "4":
 
                     Console.Write("Enter Post Id: ");
                     var getPostId = int.Parse(Console.ReadLine());
@@ -87,14 +87,14 @@ public class Program
 
                     break;
 
-                case "5": /*Delete User*/
+                case "5":
                     Console.Write("Enter User Id: ");
                     var deleteUserId = int.Parse(Console.ReadLine());
                     _userService.DeleteUser(deleteUserId);
 
                     break;
 
-                case "6": //5.Delete Post
+                case "6": 
                     
                     Console.Write("Enter Post Id: ");
                     var deletePostId = int.Parse(Console.ReadLine());
